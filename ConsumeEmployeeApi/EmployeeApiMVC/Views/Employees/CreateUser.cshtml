@@ -1,0 +1,22 @@
+﻿@model EmployeeApiMVC.DTO.EmployeeDto
+
+<a asp-action="Index" asp-controller="Employees" class="btn btn-primary"> Back To View</a>
+<form method="post" asp-action="CreateUser">
+    <div class="col-md-10">
+        <div>
+            <label>EmployeeName</label>
+            <input type="text" class="form-control" asp-for="Name" />
+        </div>
+        <div>
+            <label> EmployeeSalary</label>
+            <input type="text" class="form-control" asp-for="Salary" />
+        </div>
+        <div>
+            <label>EmployeeCity</label>
+            <input type="text" class="form-control" asp-for="city" />
+        </div>
+        <div>
+            <button type="submit" class="btn btn-success">Save</button>
+        </div>
+    </div>
+</form>
